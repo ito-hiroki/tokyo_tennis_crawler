@@ -62,7 +62,7 @@ def notify_slack(week_df) -> None:
     requests.post(url, headers=headers, data=data)
 
 
-def main(request):
+def entrypoint(request):
     chrome_options = webdriver.ChromeOptions()
 
     chrome_options.add_argument("--headless")
